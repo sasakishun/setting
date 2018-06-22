@@ -10,10 +10,10 @@ ImportError: libcublas.so.9.0: cannot open shared object file: No such file or d
 
 ## 解決法（cudaをアップデートする）
 
--cuda9.0をインストール
+1. cuda9.0をインストール
 $sudo apt install cuda-9-0
 
-https://developer.nvidia.com/rdp/cudnn-download から
+2. https://developer.nvidia.com/rdp/cudnn-download から
 
 cuDNN 7.1.4 for CUDA 9.0中の
 
@@ -25,7 +25,7 @@ cuDNN 7.1.4 for CUDA 9.0中の
 
 をダウンロード
 
--その後
+3. 各ファイルをdpkgでインストール
 sudo dpkg -i libcudnn7_7.1.4.18-1+cuda9.0_amd64.deb
 
 sudo dpkg -i libcudnn7-dev_7.1.4.18-1+cuda9.0_amd64.deb
