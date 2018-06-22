@@ -1,8 +1,9 @@
 # tensorflow1.8.0にアップデートした際の注意点
 
 まず**tensorflow-gpu**をver**1.8.0**にアップデートしてみる
+```
 $sudo pip3 install --upgrade tensorflow-gpu
-
+```
 こんなエラーが出てくる
 ```
 ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory
