@@ -1,6 +1,6 @@
 # tensorflow1.8.0にアップデートした際の注意点
 
-まずtensorflow-gpuをver1.8.0にアップデートしてみる
+まず**tensorflow-gpu**をver**1.8.0**にアップデートしてみる
 $sudo pip3 install --upgrade tensorflow-gpu
 
 こんなエラーが出てくる
@@ -12,12 +12,12 @@ ImportError: libcublas.so.9.0: cannot open shared object file: No such file or d
 
 ## 解決法（cudaをアップデートする）
 
-1. cuda9.0をインストール
+1. **cuda9.0**をインストール
 ```
   $sudo apt install cuda-9-0
 ```
 
-2. https://developer.nvidia.com/rdp/cudnn-download の中のcuDNN 7.1.4 for CUDA 9.0から
+2. https://developer.nvidia.com/rdp/cudnn-download の中の**cuDNN 7.1.4 for CUDA 9.0**から
 下記のファイルをダウンロード
 
 - cuDNN v7.1.4 Runtime Library for Ubuntu16.04 (Deb)
@@ -26,9 +26,7 @@ ImportError: libcublas.so.9.0: cannot open shared object file: No such file or d
 
 - cuDNN v7.1.4 Code Samples and User Guide for Ubuntu16.04 (Deb)
 
-をダウンロード
-
-3. 各ファイルをdpkgでインストール
+3. 各ファイルを**dpkg**でインストール
 ```
 $sudo dpkg -i libcudnn7_7.1.4.18-1+cuda9.0_amd64.deb
 ```
