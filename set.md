@@ -1,4 +1,4 @@
-#tensorflow1.8.0にアップデートした際の注意点
+# tensorflow1.8.0にアップデートした際の注意点
 
 まずtensorflow-gpuをver1.8.0にアップデートしてみる
 $sudo pip3 install --upgrade tensorflow-gpu
@@ -8,7 +8,7 @@ ImportError: libcublas.so.9.0: cannot open shared object file: No such file or d
 
 どうやらcudaのバージョンが問題らしい
 
-##解決法（cudaをアップデートする）
+## 解決法（cudaをアップデートする）
 
 -cuda9.0をインストール
 $sudo apt install cuda-9-0
