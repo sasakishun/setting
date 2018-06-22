@@ -38,7 +38,6 @@ $sudo dpkg -i libcudnn7-dev_7.1.4.18-1+cuda9.0_amd64.deb
 ```
 $sudo dpkg -i libcudnn7-doc_7.1.4.18-1+cuda9.0_amd64.deb
 ```
-を実行する。
 
 tensorflow-gpu 1.8.0が使用可能になった。
 
