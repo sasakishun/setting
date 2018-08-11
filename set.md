@@ -4,12 +4,12 @@
 ```
 $sudo pip3 install --upgrade tensorflow-gpu
 ```
-こんなエラーが出てくる
+  こんなエラーが出てくる
 ```
 ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory
 ```
 
-どうやらcudaのバージョンが問題らしい
+  どうやらcudaのバージョンが問題らしい
 
 ## 解決法（cudaをアップデートする）
 
